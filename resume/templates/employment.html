@@ -1,0 +1,27 @@
+<html>
+<body bgcolor="black" text="white">
+    <h1>Employment details of the candidate</h1>
+    <font size="4">
+<table bgcolor="purple" border="2" width="50%" height="50%">
+<tr>
+    <th>Designation</th><th>Description</th><th>Duration</th><th>Notice period(days)</th>
+</tr>
+{% for item in query_results %}
+    <tr> 
+        <td>{{ item.designation }}</td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.duration }}</td>
+        <td>{{ item.notice_period_days }}</td>
+    </tr>
+{% endfor %}
+
+</table>
+</font>
+
+
+</body>
+
+
+
+
+</html>
